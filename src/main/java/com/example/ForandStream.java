@@ -7,23 +7,23 @@ import java.util.stream.Stream;
 
 public class ForandStream {
     
+List<Integer> items = new ArrayList<Integer>(100);
+
+public ForandStream(){
+    Random random = new Random();
+
+     for (int i = 0; i < items.size(); i++) {
+        items.add(random.nextInt()); // storing random integers in an array
+    }
+}
 
 public void ForStream(){
-    List<Integer> items = new ArrayList<Integer>(100);
-
-    Random random = new Random();
-    items.add(random.nextInt()); // storing random integers in an array
-
-
-    items.stream().forEach(i -> System.out.println(i));
-    
+    items.stream()
+    .forEach(s->System.out.println(s)); // storing random integers in an array
 }
 
 public void For(){
-    Random random = new Random(); // creating Random object
-    List<Integer> items = new ArrayList<Integer>(100);
     for (int i = 0; i < items.size(); i++) {
-        items.add(random.nextInt()); // storing random integers in an array
         int element = items.get(i);
         System.out.println(element+""); // printing each array element
     }
