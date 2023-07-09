@@ -3,7 +3,6 @@ package com.example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Stream;
 
 public class ForandStream {
     
@@ -12,7 +11,7 @@ List<Integer> items = new ArrayList<Integer>(100);
 public ForandStream(){
     Random random = new Random();
 
-     for (int i = 0; i < items.size(); i++) {
+     for (int i = 0; i < 100; i++) {
         items.add(random.nextInt()); // storing random integers in an array
     }
 }
