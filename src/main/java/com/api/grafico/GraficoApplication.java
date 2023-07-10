@@ -1,4 +1,7 @@
-package com.devsuperior.Grafico;
+package com.api.grafico;
+
+
+
 
 import java.io.IOException;
 
@@ -17,4 +20,5 @@ public class GraficoApplication {
 		SpringApplication.run(GraficoApplication.class, args);
 		openHomePage();
 	}
+
 }
