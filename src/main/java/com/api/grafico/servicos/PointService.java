@@ -31,7 +31,7 @@ public class PointService {
     // method to save point
     public ResponseEntity<?> save(Point pi){
 
-        if((p.getY()==0)){
+        if((pi.getY()==0)){
             //smessageria
             r.Menssagem("Noy set");
             return new ResponseEntity<Resposta>(r, HttpStatus.BAD_REQUEST);
