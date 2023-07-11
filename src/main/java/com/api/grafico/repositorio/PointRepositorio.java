@@ -7,6 +7,6 @@ import com.api.grafico.modelos.Point;
 
 @Repository
 public interface PointRepositorio extends CrudRepository<Point,Integer> {
-    // model point
+
 }
   
