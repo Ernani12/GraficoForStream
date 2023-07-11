@@ -4,12 +4,9 @@ package com.api.grafico;
 
 
 import java.io.IOException;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import com.api.grafico.modelos.Point;
-import com.api.grafico.repositorio.PointRepositorio;
+
 
 @SpringBootApplication
 public class GraficoApplication {
@@ -21,9 +18,9 @@ public class GraficoApplication {
 		rt.exec("rundll32 url.dll,FileProtocolHandler " + "http://localhost:8080");
 	}
 	
+		
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(GraficoApplication.class, args);
-
+		SpringApplication.run(GraficoApplication.class, args);		
 		openHomePage();
 	}
 	

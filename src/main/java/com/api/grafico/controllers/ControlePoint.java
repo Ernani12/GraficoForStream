@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.api.grafico.modelos.Point;
-import com.api.grafico.servicos.PointService;
+import com.api.grafico.repositorio.PointServico;
 
 @RestController
 public class ControlePoint {
 
     @Autowired
-    PointService pointservice;
+    PointServico pointservice;
 
   @RequestMapping(value = "/insert", method = RequestMethod.POST)
-   public  ResponseEntity<Object> createProduct(@RequestBody Point p) {
-      pointservice.ins(p);
+   public  ResponseEntity<Object> insere(@RequestBody Point p) {
+      pointservice.save(p);
       return new ResponseEntity<>("Point Created", HttpStatus.CREATED);
    }
     
