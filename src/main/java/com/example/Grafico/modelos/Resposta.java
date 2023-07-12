@@ -1,4 +1,4 @@
-package com.api.grafico.modelos;
+package com.example.Grafico.modelos;
 
 import org.springframework.stereotype.Component;
 

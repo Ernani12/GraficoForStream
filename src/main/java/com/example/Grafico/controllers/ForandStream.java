@@ -1,15 +1,18 @@
-package com.api.grafico;
+package com.example.Grafico.controllers;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.api.grafico.modelos.Point;
+
+
+import com.example.Grafico.modelos.Point;
+
 
 public class ForandStream {
     
 List<Point> items = new ArrayList<Point>(100);
-
 
 public ForandStream(){
     Random random = new Random();
