@@ -1,5 +1,8 @@
 package com.example.Grafico.modelos;
 
+import com.example.Grafico.controllers.PointPostDTO;
+import com.example.Grafico.controllers.PointResquetDTO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,6 +32,12 @@ import lombok.Setter;
         public Point(Double x, Double y) {
             this.x = x;
             this.y = y;
+        }
+
+        public Point(PointPostDTO R){
+            //record  crated seters and getters too
+           this.x=R.x();
+           this.y=R.y();
         }
 
         public double getX() {
