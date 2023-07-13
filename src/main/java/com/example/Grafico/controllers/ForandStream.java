@@ -22,7 +22,7 @@ public ForandStream(){
 
     
      for (int i = 0; i < 100; i++) {
-        Point P = new Point(random.nextInt(),0);
+        Point P = new Point(random.nextDouble(),0.0);
 
         items.add(P); // storing random integers in an array
     }
