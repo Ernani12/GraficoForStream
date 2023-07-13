@@ -27,8 +27,7 @@ public class GraficoApplication  {
 
 		ForandStream F = new ForandStream();
 
-		F.For();
-		F.ForStream();
+	
 	}
 
 

@@ -1,15 +1,17 @@
 package com.example.Grafico.modelos;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-    @Entity
-    @Table(name="Point")
+    @Entity(name="Points")  
+    //not using SQL
+    @Table(name="Points")
+    
     public class Point {
-
 
         @Id
         @GeneratedValue(strategy= GenerationType.IDENTITY)
