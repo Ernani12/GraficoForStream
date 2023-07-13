@@ -23,6 +23,10 @@ import jakarta.persistence.Table;
             this.x = x;
             this.y = y;
         }
+
+        public Point(){
+            
+        }
     
     
         public double getX() {
