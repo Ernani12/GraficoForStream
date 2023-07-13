@@ -25,8 +25,6 @@ public class GraficoApplication  {
 
 		openHomePage();
 
-		ForandStream F = new ForandStream();
-
 	
 	}
 

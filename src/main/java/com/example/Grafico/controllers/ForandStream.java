@@ -4,14 +4,9 @@ package com.example.Grafico.controllers;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.Grafico.servicos.PointService;
-import com.example.Grafico.servicos.PointServiceImp;
 import com.example.Grafico.modelos.Point;
-import com.example.Grafico.repositorio.PointRepository;
 
 
 
