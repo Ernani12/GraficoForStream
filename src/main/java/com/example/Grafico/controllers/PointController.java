@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.Grafico.modelos.Point;
-import com.example.Grafico.repositorio.PointRepository;
+import com.example.Grafico.repositorio.PointRepositorio;
 
 
 
@@ -18,7 +18,7 @@ import com.example.Grafico.repositorio.PointRepository;
 public class PointController {
 
     @Autowired  //injected
-    private PointRepository P;//instance
+    private PointRepositorio P;//instance
   
 
     @GetMapping
