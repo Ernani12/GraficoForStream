@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.Grafico.modelos.Point;
 import com.example.Grafico.repositorio.PointRepositorio;
-
 
 
 @RestController
@@ -22,8 +19,8 @@ public class PointController {
   
 
     @GetMapping
-    public List<Point> getAll(){
-        List<Point> PointList= P.findAll();
+    public List<PointDTO> getAll(){
+        List<PointDTO> PointList= P.findAll().stream().map(PointDTO::new).toList();
         return PointList;
     }
 

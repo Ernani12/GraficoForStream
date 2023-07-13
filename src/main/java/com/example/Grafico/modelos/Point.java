@@ -1,15 +1,22 @@
 package com.example.Grafico.modelos;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
     @Entity(name="Points")  
     //not using SQL
     @Table(name="Points")
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
     
     public class Point {
 
@@ -19,16 +26,11 @@ import jakarta.persistence.Table;
         private  double x;
         private  double y;
     
-        public Point(double x, double y) {
+        public Point(Double x, Double y) {
             this.x = x;
             this.y = y;
         }
 
-        public Point(){
-            
-        }
-    
-    
         public double getX() {
             return x;
         }
