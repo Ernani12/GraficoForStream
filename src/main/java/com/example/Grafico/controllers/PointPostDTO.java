@@ -2,9 +2,9 @@ package com.example.Grafico.controllers;
 
 import com.example.Grafico.modelos.Point;
 
-public record PointDTO (Integer id, Double x, Double y) {
+public record PointPostDTO (Integer id, Double x, Double y) {
  
-    public PointDTO(Point P){
+    public PointPostDTO(Point P){
         this(P.getId(),P.getX(), P.getY());
     }   
 
